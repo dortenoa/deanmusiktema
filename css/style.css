@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+/* CSS Document */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px; }
+
+header {
+  margin-top: 0px;
+  height: 150px;
+  width: 100%;
+  padding-top: 2%;
+  background-color: black;
+  position: fixed;
+  /*husk at angiv width*/
+  z-index: 100; }
+  header img {
+    width: 100px;
+    height: 100px;
+    margin-left: 5%;
+    float: left; }
+
+/*Facebook knap i venstre side*/
+.fb-iframe {
+  height: 500px;
+  /*background: blue;*/
+  display: block;
+  position: fixed;
+  margin-top: 12em;
+  top: 10px;
+  width: 340px;
+  left: -340px;
+  z-index: 100; }
+
+.fb-toggle-button {
+  height: 100px;
+  position: fixed;
+  top: 350px;
+  cursor: pointer;
+  z-index: 100; }
+
+.fb-toggle-button img {
+  height: 500px;
+  width: 500px; }
+
+.ins-toggle-button {
+  height: 100px;
+  position: fixed;
+  top: 500px;
+  cursor: pointer;
+  z-index: 100; }
+
+.ins-toggle-button img {
+  height: 500px;
+  width: 500px; }
+
+main {
+  height: auto;
+  width: 100%;
+  background-color: black; }
+  main section.top {
+    height: 800px;
+    width: 100%;
+    background-color: black; }
+    main section.top #myDiv {
+      -webkit-transform: rotateZ(90deg);
+      /* Safari */
+      transform: rotateZ(90deg);
+      /* Standard syntax */ }
+    main section.top .h2nedad h2 {
+      color: white;
+      background-color: yellow; }
+  main section.middleup {
+    width: 100%;
+    height: 500px;
+    background-color: #121212;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    /*skrå ned*/ }
+  main section.middle {
+    width: 100%;
+    height: 500px;
+    background-color: #121212;
+    -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+    /*skrå op*/ }
+  main section.middledown {
+    width: 100%;
+    height: 500px;
+    background-color: #121212;
+    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    /*skrå ned*/ }
+  main section.bottomup {
+    width: 100%;
+    height: 800px;
+    background-color: #121212;
+    -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+    /*skrå op*/ }
+  main section.bottomdown {
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+    /* Rotate div */
+    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    /*skrå ned*/ }
+
+footer {
+  /*background-image: url("img/goldtext.jpg");*/ }
+
+/*   -ms-transform: rotate(-25deg); /* IE 9 */
+/* -webkit-transform: rotate(-25deg); /* Safari 3-8 */
+/*transform: rotate(-25deg);*/
+
+/*# sourceMappingURL=style.css.map */
