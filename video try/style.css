@@ -1,0 +1,12 @@
+.control {
+  position: relative;
+}
+
+.control button {
+  position: absolute;
+  left: 0;
+}
+
+.pause {
+  display: none;
+}
