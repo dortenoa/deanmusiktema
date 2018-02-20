@@ -9,7 +9,9 @@
 
 body{
   margin:0px;
+  width: 100%;
 }
+
 header {
   margin-top: 0px;
   height: 150px;
@@ -25,7 +27,19 @@ header {
     margin-left: 5%;
     float: left;
   }
-}
+  nav{
+    p{
+      color:white;
+      float: right;
+      list-style: none;
+      margin-right: 5%;
+      margin-top: 5%
+    }
+      a{text-decoration: none;
+      }
+      }
+    }
+
 
 
 /*Facebook knap i venstre side*/
@@ -78,24 +92,26 @@ background-color: black;
     height:800px;
     width: 100%;
     background-color:black;
+    img{
+
+    }
 
     #myDiv {
     -webkit-transform: rotateZ(90deg); /* Safari */
     transform: rotateZ(90deg); /* Standard syntax */
     }
         .h2nedad{
-          h2{color:white;
+          h2{}
+          color:white;
           background-color: yellow;
         }
-
-        }
-  }
-    section.middleup{
-      width: 100%;
-       height: 500px;
-       background-color: #121212;
-       -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-clip-path: polygon(100% 0, 0% 100%, 100% 100%);/*skrå ned*/
+    }
+section.middleup{
+  width: 100%;
+  height: 500px;
+  background-color: #121212;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);/*skrå ned*/
 }
 
 section.middle{
@@ -110,7 +126,7 @@ section.middledown{
    height: 500px;
    background-color:   #121212;
    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
-clip-path: polygon(0 100%, 100% 0, 100% 100%);/*skrå ned*/
+   clip-path: polygon(0 100%, 100% 0, 100% 100%);/*skrå ned*/
 }
 
 section.bottomup{
