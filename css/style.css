@@ -17,7 +17,7 @@ body {
   background-color: black; }
 
 header {
-  height: 100px;
+  height: 10%;
   width: 100%;
   padding-top: 0.5%;
   /*background-color: black;*/
@@ -35,6 +35,10 @@ header {
     margin-left: 3%; }
   header nav {
     /*pless booking text*/ }
+    header nav ul {
+      float: right;
+      margin-top: 10%;
+      margin-right: 3%; }
     header nav li {
       margin-right: 6%;
       margin-top: 7%;
@@ -103,9 +107,6 @@ main {
       float: right;
       height: 100%;
       width: 100%; }
-    main section.top .goldenrecord {
-      float: left;
-      width: 50%; }
     main section.top .deantext {
       width: 100%;
       margin-left: 24%;
