@@ -9,3 +9,10 @@ border-radius: 50%;
 color: black;
 font-size: 25px;
 }
+
+/*@mixin mq($arg) {
+  @media screen and (min-width:$arg){
+    @content;
+  }
+}
+*/

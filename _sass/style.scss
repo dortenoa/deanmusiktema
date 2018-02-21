@@ -10,35 +10,50 @@
 body{
   margin:0px;
   width: 100%;
+  height: 2000px;
+  background-color: black;
 }
 
 header {
-  margin-top: 0px;
-  height: 150px;
+  height: 100px;
   width: 100%;
-  padding-top: 2%;
-  background-color: black;
+  padding-top: 0.5%;
+  /*background-color: black;*/
   position: fixed;/*husk at angiv width*/
   z-index: 100;
 
+  .centerContent {
+  width: 100%;
+  /* tilpasse sig størrelsen i forhold til vinduet*/
+  }
+
+/*logo image*/
   img {
     width:100px;
     height: 100px;
-    margin-left: 5%;
     float: left;
+    margin-left: 3%;
   }
+
   nav{
-    p{
-      color:white;
-      float: right;
-      list-style: none;
-      margin-right: 5%;
-      margin-top: 5%
+
+/*pless booking text*/
+  li{
+    margin-right: 6%;
+    margin-top: 7%;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+
+
+  a {
+
+  color:white;
+  text-decoration: none;
+  }
     }
-      a{text-decoration: none;
-      }
-      }
-    }
+}
+}
 
 
 
@@ -53,28 +68,26 @@ header {
     width: 340px;
     left: -340px;
     z-index: 100;
+
   }
 
   .fb-toggle-button {
-    height: 100px;
     position: fixed;
     top: 350px;
     cursor: pointer;
     z-index: 100;
+    height: 75px;
+    width:75px;
+    /*display:none;*/
   }
 
-  .fb-toggle-button{
-    img {
-      height: 500px;
-      width:500px;
-    }
-  }
   .ins-toggle-button {
     height: 100px;
     position: fixed;
     top: 500px;
     cursor: pointer;
     z-index: 100;
+    display:none;
   }
     .ins-toggle-button{
       img{
@@ -82,36 +95,105 @@ header {
         width: 500px;
       }
     }
+/*Facebook knap slut*/
 
+/*Forside start*/
 main {
 height: auto;
 width: 100%;
 background-color: black;
 
+.imgdean{
+  width:100%;
+  img{
+    margin-top: -4.5em;
+    width:100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+  }
+}
+
   section.top {
-    height:800px;
+    height:120px;
     width: 100%;
     background-color:black;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+
     img{
-
+      margin-top: 5%;
+      float: right;
+      height:100%;
+      width:100%;
     }
-
-    #myDiv {
+    .goldenrecord{
+      float: left;
+      width: 50%;
+    }
+/*text skrå*/
+    .deantext{
+      width: 100%;
+      margin-left: 24%;
+      position: absolute;
+      /*background-color: pink;*/
+      font-family: 'Oswald', sans-serif;
     -webkit-transform: rotateZ(90deg); /* Safari */
     transform: rotateZ(90deg); /* Standard syntax */
-    }
-        .h2nedad{
-          h2{}
+
+        .h2first{
+          width:100%;
           color:white;
-          background-color: yellow;
-        }
-    }
+          /*background-color: yellow;*/
+          font-size:3.6em;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          line-height: 100%;
+          h2{
+          margin-top: 1%;
+          }
+          }
+
+          .h2second{
+            width:150px;
+            color:white;
+            /*background-color: yellow;*/
+            font-size: 3.6em;
+            margin: 0;
+            padding-left: 10%;
+            border: 0;
+            line-height: 100%;
+            h2{
+            margin-top: 1%;
+
+
+            }
+            }
+
+            .h2third{
+              width:150px;
+              color:white;
+              /*background-color: yellow;*/
+              font-size: 3.6em;
+              margin: 0;
+              padding-left: 20%;
+              border: 0;
+              line-height: 100%;
+              h2{
+              margin-top:1%;
+
+              }
+              }
+
+  }
+  }
+
 section.middleup{
   width: 100%;
-  height: 500px;
+  height: 250px;
   background-color: #121212;
-  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);/*skrå ned*/
+  -webkit-clip-path: polygon(0 74%, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 74%, 100% 0, 100% 100%, 0% 100%);
 }
 
 section.middle{
@@ -133,8 +215,8 @@ section.bottomup{
    width: 100%;
    height: 800px;
    background-color: #121212;
-   -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
-   clip-path: polygon(0 100%, 100% 0, 0 0);/*skrå op*/
+   -webkit-clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 26%);
+clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 26%);
 }
 
 section.bottomdown{
@@ -144,6 +226,10 @@ section.bottomdown{
    /* Rotate div */
    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
    clip-path: polygon(0 100%, 100% 0, 100% 100%);/*skrå ned*/
+   img{
+     width: 100%;
+     height: auto;
+   }
 }
 }
 footer {
@@ -152,3 +238,13 @@ footer {
 /*   -ms-transform: rotate(-25deg); /* IE 9 */
   /* -webkit-transform: rotate(-25deg); /* Safari 3-8 */
    /*transform: rotate(-25deg);*/
+
+@media screen and (max-width: 768px) {
+  .fb-toggle-button {
+    display:none;
+  }
+ }
+ /*media q der bruges i de enkelte classes*/
+/*@include mq(750px){
+
+}*/

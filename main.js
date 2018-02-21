@@ -12,4 +12,17 @@ $(document).ready(function() {
       fbslide = 0;
     }
   });
+/*booking text forsvinder ved scroll*/
+  $(window).scroll(function() {
+    /*alert("hide");*/
+    if ($(this).scrollTop()>0)
+    {
+      $(".booking").fadeOut(1000);
+    }
+    else
+      {
+        $(".booking").fadeIn();
+      }
+    });
+
 });

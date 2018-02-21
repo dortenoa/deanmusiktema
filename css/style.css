@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*@mixin mq($arg) {
+  @media screen and (min-width:$arg){
+    @content;
+  }
+}
+*/
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 /* CSS Document */
 * {
@@ -6,30 +12,38 @@
 
 body {
   margin: 0px;
-  width: 100%; }
+  width: 100%;
+  height: 2000px;
+  background-color: black; }
 
 header {
-  margin-top: 0px;
-  height: 150px;
+  height: 100px;
   width: 100%;
-  padding-top: 2%;
-  background-color: black;
+  padding-top: 0.5%;
+  /*background-color: black;*/
   position: fixed;
   /*husk at angiv width*/
-  z-index: 100; }
+  z-index: 100;
+  /*logo image*/ }
+  header .centerContent {
+    width: 100%;
+    /* tilpasse sig størrelsen i forhold til vinduet*/ }
   header img {
     width: 100px;
     height: 100px;
-    margin-left: 5%;
-    float: left; }
-  header nav p {
-    color: white;
-    float: right;
-    list-style: none;
-    margin-right: 5%;
-    margin-top: 5%; }
-  header nav a {
-    text-decoration: none; }
+    float: left;
+    margin-left: 3%; }
+  header nav {
+    /*pless booking text*/ }
+    header nav li {
+      margin-right: 6%;
+      margin-top: 7%;
+      float: right;
+      font-family: 'Raleway', sans-serif;
+      list-style: none; }
+      header nav li a {
+        color: white;
+        text-decoration: none; }
 
 /*Facebook knap i venstre side*/
 .fb-iframe {
@@ -44,50 +58,103 @@ header {
   z-index: 100; }
 
 .fb-toggle-button {
-  height: 100px;
   position: fixed;
   top: 350px;
   cursor: pointer;
-  z-index: 100; }
-
-.fb-toggle-button img {
-  height: 500px;
-  width: 500px; }
+  z-index: 100;
+  height: 75px;
+  width: 75px;
+  /*display:none;*/ }
 
 .ins-toggle-button {
   height: 100px;
   position: fixed;
   top: 500px;
   cursor: pointer;
-  z-index: 100; }
+  z-index: 100;
+  display: none; }
 
 .ins-toggle-button img {
   height: 500px;
   width: 500px; }
 
+/*Facebook knap slut*/
+/*Forside start*/
 main {
   height: auto;
   width: 100%;
   background-color: black; }
+  main .imgdean {
+    width: 100%; }
+    main .imgdean img {
+      margin-top: -4.5em;
+      width: 100%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%); }
   main section.top {
-    height: 800px;
+    height: 120px;
     width: 100%;
-    background-color: black; }
-    main section.top #myDiv {
+    background-color: black;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+    /*text skrå*/ }
+    main section.top img {
+      margin-top: 5%;
+      float: right;
+      height: 100%;
+      width: 100%; }
+    main section.top .goldenrecord {
+      float: left;
+      width: 50%; }
+    main section.top .deantext {
+      width: 100%;
+      margin-left: 24%;
+      position: absolute;
+      /*background-color: pink;*/
+      font-family: 'Oswald', sans-serif;
       -webkit-transform: rotateZ(90deg);
       /* Safari */
       transform: rotateZ(90deg);
       /* Standard syntax */ }
-    main section.top .h2nedad {
-      color: white;
-      background-color: yellow; }
+      main section.top .deantext .h2first {
+        width: 100%;
+        color: white;
+        /*background-color: yellow;*/
+        font-size: 3.6em;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        line-height: 100%; }
+        main section.top .deantext .h2first h2 {
+          margin-top: 1%; }
+      main section.top .deantext .h2second {
+        width: 150px;
+        color: white;
+        /*background-color: yellow;*/
+        font-size: 3.6em;
+        margin: 0;
+        padding-left: 10%;
+        border: 0;
+        line-height: 100%; }
+        main section.top .deantext .h2second h2 {
+          margin-top: 1%; }
+      main section.top .deantext .h2third {
+        width: 150px;
+        color: white;
+        /*background-color: yellow;*/
+        font-size: 3.6em;
+        margin: 0;
+        padding-left: 20%;
+        border: 0;
+        line-height: 100%; }
+        main section.top .deantext .h2third h2 {
+          margin-top: 1%; }
   main section.middleup {
     width: 100%;
-    height: 500px;
+    height: 250px;
     background-color: #121212;
-    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    /*skrå ned*/ }
+    -webkit-clip-path: polygon(0 74%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 74%, 100% 0, 100% 100%, 0% 100%); }
   main section.middle {
     width: 100%;
     height: 500px;
@@ -106,9 +173,8 @@ main {
     width: 100%;
     height: 800px;
     background-color: #121212;
-    -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
-    clip-path: polygon(0 100%, 100% 0, 0 0);
-    /*skrå op*/ }
+    -webkit-clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 26%);
+    clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 26%); }
   main section.bottomdown {
     width: 100%;
     height: 500px;
@@ -117,6 +183,9 @@ main {
     -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
     /*skrå ned*/ }
+    main section.bottomdown img {
+      width: 100%;
+      height: auto; }
 
 footer {
   /*background-image: url("img/goldtext.jpg");*/ }
@@ -124,5 +193,12 @@ footer {
 /*   -ms-transform: rotate(-25deg); /* IE 9 */
 /* -webkit-transform: rotate(-25deg); /* Safari 3-8 */
 /*transform: rotate(-25deg);*/
+@media screen and (max-width: 768px) {
+  .fb-toggle-button {
+    display: none; } }
+/*media q der bruges i de enkelte classes*/
+/*@include mq(750px){
+
+}*/
 
 /*# sourceMappingURL=style.css.map */
