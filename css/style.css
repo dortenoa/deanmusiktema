@@ -13,7 +13,7 @@
 body {
   margin: 0px;
   width: 100%;
-  height: 2000px;
+  height: auto;
   background-color: black; }
 
 header {
@@ -29,8 +29,8 @@ header {
     width: 100%;
     /* tilpasse sig størrelsen i forhold til vinduet*/ }
   header img {
-    width: 100px;
-    height: 100px;
+    width: 20%;
+    height: 20%;
     float: left;
     margin-left: 3%; }
   header nav {
@@ -40,6 +40,7 @@ header {
       margin-top: 10%;
       margin-right: 3%; }
     header nav li {
+      font-size: 100%;
       margin-right: 6%;
       margin-top: 7%;
       float: right;
@@ -55,7 +56,7 @@ header {
   /*background: blue;*/
   display: block;
   position: fixed;
-  margin-top: 12em;
+  margin-top: 14em;
   top: 10px;
   width: 340px;
   left: -340px;
@@ -91,13 +92,14 @@ main {
   main .imgdean {
     width: 100%; }
     main .imgdean img {
-      margin-top: -4.5em;
+      margin-top: 0;
       width: 100%;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%); }
   main section.top {
-    height: 120px;
+    height: 530px;
     width: 100%;
+    margin: 0;
     background-color: black;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
@@ -109,8 +111,11 @@ main {
       width: 100%; }
     main section.top .deantext {
       width: 100%;
+      height: auto;
+      margin-top: 19%;
       margin-left: 24%;
       position: absolute;
+      float: right;
       /*background-color: pink;*/
       font-family: 'Oswald', sans-serif;
       -webkit-transform: rotateZ(90deg);
@@ -121,7 +126,7 @@ main {
         width: 100%;
         color: white;
         /*background-color: yellow;*/
-        font-size: 3.6em;
+        font-size: 400%;
         margin: 0;
         padding: 0;
         border: 0;
@@ -130,9 +135,9 @@ main {
           margin-top: 1%; }
       main section.top .deantext .h2second {
         width: 150px;
-        color: white;
+        color: #967e12;
         /*background-color: yellow;*/
-        font-size: 3.6em;
+        font-size: 400%;
         margin: 0;
         padding-left: 10%;
         border: 0;
@@ -141,9 +146,9 @@ main {
           margin-top: 1%; }
       main section.top .deantext .h2third {
         width: 150px;
-        color: white;
+        color: #ad1457;
         /*background-color: yellow;*/
-        font-size: 3.6em;
+        font-size: 400%;
         margin: 0;
         padding-left: 20%;
         border: 0;
@@ -163,13 +168,6 @@ main {
     -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
     clip-path: polygon(0 100%, 100% 0, 0 0);
     /*skrå op*/ }
-  main section.middledown {
-    width: 100%;
-    height: 500px;
-    background-color: #121212;
-    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    /*skrå ned*/ }
   main section.bottomup {
     width: 100%;
     height: 800px;
@@ -179,16 +177,16 @@ main {
   main section.bottomdown {
     width: 100%;
     height: 500px;
-    background-color: yellow;
     /* Rotate div */
-    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    -webkit-clip-path: polygon(100% 51%, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 51%, 0% 100%, 100% 100%);
     /*skrå ned*/ }
     main section.bottomdown img {
       width: 100%;
       height: auto; }
 
 footer {
+  height: 100px;
   /*background-image: url("img/goldtext.jpg");*/ }
 
 /*   -ms-transform: rotate(-25deg); /* IE 9 */
@@ -196,10 +194,11 @@ footer {
 /*transform: rotate(-25deg);*/
 @media screen and (max-width: 768px) {
   .fb-toggle-button {
-    display: none; } }
-/*media q der bruges i de enkelte classes*/
-/*@include mq(750px){
+    display: none; }
 
-}*/
+  .h2first .h2second .h2third {
+    font-size: 200%; } }
+/*media q der bruges i de enkelte classes*/
+/*@include mq(750px){*/
 
 /*# sourceMappingURL=style.css.map */

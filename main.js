@@ -17,7 +17,7 @@ $(document).ready(function() {
     /*alert("hide");*/
     if ($(this).scrollTop()>0)
     {
-      $(".booking").fadeOut(1000);
+      $(".booking").fadeOut(800);
     }
     else
       {
