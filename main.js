@@ -1,3 +1,4 @@
+/*facebook knap slide ind*/
 $(document).ready(function() {
   var fbslide = 0;
   $(".fb-toggle-button").click(function() {
@@ -24,5 +25,4 @@ $(document).ready(function() {
         $(".booking").fadeIn();
       }
     });
-
 });

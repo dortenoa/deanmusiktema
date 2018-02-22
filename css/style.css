@@ -17,38 +17,51 @@ body {
   background-color: black; }
 
 header {
-  height: 10%;
+  height: 100px;
   width: 100%;
-  padding-top: 0.5%;
   /*background-color: black;*/
   position: fixed;
   /*husk at angiv width*/
-  z-index: 100;
-  /*logo image*/ }
+  z-index: 10;
+  margin-bottom: 0;
+  /* tilpasse sig størrelsen i forhold til vinduet*/ }
+  header .imgdean {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: -1; }
+    header .imgdean img {
+      width: 100%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%); }
   header .centerContent {
     width: 100%;
-    /* tilpasse sig størrelsen i forhold til vinduet*/ }
-  header img {
-    width: 20%;
-    height: 20%;
-    float: left;
-    margin-left: 3%; }
-  header nav {
-    /*pless booking text*/ }
-    header nav ul {
-      float: right;
-      margin-top: 10%;
-      margin-right: 3%; }
-    header nav li {
-      font-size: 100%;
-      margin-right: 6%;
-      margin-top: 7%;
-      float: right;
-      font-family: 'Raleway', sans-serif;
-      list-style: none; }
-      header nav li a {
-        color: white;
-        text-decoration: none; }
+    height: 50%;
+    margin-top: 0px;
+    /*background-color: yellow;*/
+    /*logo image*/ }
+    header .centerContent img {
+      padding-top: 3%;
+      width: 15%;
+      /*height: 20%;*/
+      float: left;
+      margin-left: 1%; }
+
+nav ul {
+  float: right;
+  margin-top: 18%;
+  margin-right: 3%;
+  /*pless booking text*/ }
+  nav ul li {
+    font-size: 100%;
+    margin-right: 6%;
+    margin-top: 7%;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    list-style: none; }
+    nav ul li a {
+      color: white;
+      text-decoration: none; }
 
 /*Facebook knap i venstre side*/
 .fb-iframe {
@@ -64,24 +77,12 @@ header {
 
 .fb-toggle-button {
   position: fixed;
-  top: 350px;
+  top: 400px;
   cursor: pointer;
   z-index: 100;
   height: 75px;
   width: 75px;
   /*display:none;*/ }
-
-.ins-toggle-button {
-  height: 100px;
-  position: fixed;
-  top: 500px;
-  cursor: pointer;
-  z-index: 100;
-  display: none; }
-
-.ins-toggle-button img {
-  height: 500px;
-  width: 500px; }
 
 /*Facebook knap slut*/
 /*Forside start*/
@@ -89,31 +90,31 @@ main {
   height: auto;
   width: 100%;
   background-color: black; }
-  main .imgdean {
-    width: 100%; }
-    main .imgdean img {
-      margin-top: 0;
-      width: 100%;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%); }
   main section.top {
-    height: 530px;
+    height: 450px;
     width: 100%;
-    margin: 0;
-    background-color: black;
+    padding-top: 5%;
+    margin-bottom: 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
     /*text skrå*/ }
-    main section.top img {
-      margin-top: 5%;
+    main section.top .deaninfo {
+      color: white;
+      margin-top: 20%;
+      width: 75%;
+      padding-left: 10%;
+      position: absolute;
       float: right;
-      height: 100%;
-      width: 100%; }
+      /*background-color: pink;*/
+      font-family: 'Oswald', sans-serif; }
+      main section.top .deaninfo h1 {
+        font-size: 150%; }
     main section.top .deantext {
       width: 100%;
       height: auto;
-      margin-top: 19%;
-      margin-left: 24%;
+      padding-left: 50%;
+      margin-left: 20%;
+      margin-top: 12em;
       position: absolute;
       float: right;
       /*background-color: pink;*/
@@ -139,18 +140,18 @@ main {
         /*background-color: yellow;*/
         font-size: 400%;
         margin: 0;
-        padding-left: 10%;
+        padding-left: 15%;
         border: 0;
         line-height: 100%; }
         main section.top .deantext .h2second h2 {
           margin-top: 1%; }
       main section.top .deantext .h2third {
         width: 150px;
-        color: #212121;
+        color: #424242;
         /*background-color: yellow;*/
         font-size: 400%;
         margin: 0;
-        padding-left: 20%;
+        padding-left: 30%;
         border: 0;
         line-height: 100%; }
         main section.top .deantext .h2third h2 {
@@ -168,30 +169,63 @@ main {
     -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
     clip-path: polygon(0 100%, 100% 0, 0 0);
     /*skrå op*/ }
-  main section.bottomup {
-    width: 100%;
-    height: 800px;
-    background-color: #121212;
-    -webkit-clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 26%);
-    clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 26%); }
   main section.bottomdown {
     width: 100%;
     height: 500px;
     /* Rotate div */
-    -webkit-clip-path: polygon(100% 51%, 0% 100%, 100% 100%);
-    clip-path: polygon(100% 51%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
     /*skrå ned*/ }
     main section.bottomdown img {
       width: 100%;
       height: auto; }
 
-footer {
-  height: 100px;
-  /*background-image: url("img/goldtext.jpg");*/ }
-
 /*   -ms-transform: rotate(-25deg); /* IE 9 */
 /* -webkit-transform: rotate(-25deg); /* Safari 3-8 */
 /*transform: rotate(-25deg);*/
+/*CSS footer start*/
+footer {
+  height: 60px;
+  background-color: #121212;
+  position: absolute;
+  width: 100%;
+  /*footer luk*/ }
+
+footer div {
+  /*logoer ligger på linier med header*/
+  /* a luk*/ }
+
+footer div a i.fa {
+  float: right;
+  margin-left: 5px;
+  margin-top: -25px;
+  margin-right: 15px; }
+
+footer div a i.fa-facebook {
+  background-color: #ff9800;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  font-size: 25px;
+  /*#3b5998 farven sendes til mixin*/ }
+
+footer div a i.fa-instagram {
+  background-color: #ff9800;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  font-size: 25px;
+  /*#000000*/ }
+
+/*CSS Footer slut*/
 @media screen and (max-width: 768px) {
   .fb-toggle-button {
     display: none; }
