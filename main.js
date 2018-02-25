@@ -30,9 +30,9 @@ function getCurrentScroll() {
     }
 });
 
-/*booking text forsvinder ved scroll*/
+/*booking text forsvinder ved scroll
   $(window).scroll(function() {
-    /*alert("hide");*/
+    /*alert("hide");
     if ($(this).scrollTop()>0)
     {
       $(".booking").fadeOut(800);
@@ -41,9 +41,9 @@ function getCurrentScroll() {
       {
         $(".booking").fadeIn();
       }
-    });
+    });*/
 
-/*Zoom on mouseover 3 ord - .h2first*/
+  /*Zoom on mouseover 3 ord - .h2first*/
   var oldSize = parseFloat($(".h2first").css('font-size'));
   var newSize = oldSize  * 2;
   $(".h2first").hover(

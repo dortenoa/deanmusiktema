@@ -20,15 +20,14 @@ header  {
   position: fixed;/*husk at angiv width*/
   z-index: 10;
   margin-bottom: 0;
-  /*-webkit-transition: height 0.1s;
-    -moz-transition: height 0.1s;
-    transition: height 0.1s;*/
+
 
   .imgdean{
   width:100%;
   position: absolute;
   z-index: -1;
 
+/*header img 3 pic dean*/
     img{
       width:100%;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
@@ -52,41 +51,58 @@ display: none;
   /* tilpasse sig størrelsen i forhold til vinduet*/
   .centerContent {
   width: 100%;
-  height: 50%;
+  height: 180px;
   margin-top: 0px;
+  position: fixed;
   /*background-color: yellow;*/
 
   /*logo image*/
+  .logo {
+    width: 100%;
+    height: auto;
+    /*background: lightblue;*/
+    position: fixed;
+
     img {
       padding-top: 5%;
       width:8%;
       /*height: 20%;*/
-      float: left;
+      /*float: left;*/
       margin-left: 5%;
     }
 }
-}
+
+.navbar{
+width: 50%;
+height: 20%;
+float: right;
+
 nav{
   ul{
+    list-style: none;
+    padding-left: 0;
+    margin-right: 5%;
+    margin-top: 10%;
     float: right;
-    margin-top: 18%;
-    margin-right: 3%;
 
 /*pless booking text*/
   li{
     font-size:100%;
-    margin-right: 6%;
+    /*margin-right: 6%;
     margin-top: 7%;
-    float: right;
-    font-family: 'Raleway', sans-serif;
-    list-style: none;
+    float: right;*/
+    font-family: 'Oswald', sans-serif;
+
 
   a {
-    color:white;
-    text-decoration: none;
+    color:#ff9800;
+text-decoration: none;
   }
     }
     }
+  }
+}
+}
 }
 /*follow mouse*/
 
@@ -108,7 +124,7 @@ nav{
 
   .fb-toggle-button {
     position: fixed;
-    top: 350px;
+    top: 400px;
     cursor: pointer;
     z-index: 100;
     height: 75px;
@@ -130,7 +146,51 @@ background-color: black;
     margin-bottom: 0;
         /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
 clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
+/*text hide behing header scroll up*/
+.headertexthide {
+  margin-top: 2em;
+  width: 75%;
+  height: auto;
+  margin-left: 17%;
+  position: absolute;
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  .h2headerhide{
+width: 100%;
+margin-top: 1em;
+position: absolute;
 
+  .h2million{
+    width:100%;
+    color:#424242;
+    /*background-color: yellow;*/
+    font-size:380%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 100%;
+    h2{
+    margin-top: 1%;
+    }
+    }
+    .h2thousand{
+      width:100%;
+      color:rgb(21, 21, 21); /*#424242;*/
+      /*background-color: yellow;*/
+      font-size:1.5em;
+      margin:0;
+      padding: 0;
+      border: 0;
+      line-height: 100%;
+      h2{
+      margin-top: 1%;
+      }
+      }
+      h2::first-letter{
+        color: #ffffff;
+      }
+}
+}
 /*citat  -har haft mange*/
 .deaninfo{
   color:white;
@@ -173,7 +233,7 @@ clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
 
           .h2second{
             width:150px;
-            color:#ff9800;
+            color:#ff9800; /*orange*/
             /*background-color: yellow;*/
             font-size: 600%;
             margin: 0;
@@ -762,20 +822,31 @@ section.bottomdown{
 
      /*CSS Footer slut*/
      /*media queries start*/
+
+@media screen and (max-width:908px) {
+  main section.top .deaninfo{
+    width: 70%;
+  }
+}
      @media screen and (max-width:768px) {
        main .fb-toggle-button {
          display:none;
        }
 
-      main section .top .deantext .h2first .h2second .h2third{
-         font-size:200%;
+
+       main section.top .headertexthide .h2headerhide .h2million{
+         font-size: 250%;
        }
-
-       main section.top .deaninfo{
-         width: 70%;
-       }
-
-
 }
- /*media q der bruges i de enkelte classes*/
-/*@include mq(750px){*/
+
+@media screen and (max-width:632px){
+      main section.top .headertexthide .h2headerhide .h2million{
+   font-size: 1.5em;
+}
+}
+
+@media screen and (max-width:565px){
+      main section.top .headertexthide .h2headerhide {
+   display: none;
+}
+}

@@ -23,16 +23,14 @@ header {
   /*husk at angiv width*/
   z-index: 10;
   margin-bottom: 0;
-  /*-webkit-transition: height 0.1s;
-    -moz-transition: height 0.1s;
-    transition: height 0.1s;*/
   /*header shrink*/
   /*header shrink slut*/
   /* tilpasse sig størrelsen i forhold til vinduet*/ }
   header .imgdean {
     width: 100%;
     position: absolute;
-    z-index: -1; }
+    z-index: -1;
+    /*header img 3 pic dean*/ }
     header .imgdean img {
       width: 100%;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
@@ -48,32 +46,42 @@ header {
     transition: all 0.1s; }
   header .centerContent {
     width: 100%;
-    height: 50%;
+    height: 180px;
     margin-top: 0px;
+    position: fixed;
     /*background-color: yellow;*/
     /*logo image*/ }
-    header .centerContent img {
-      padding-top: 5%;
-      width: 8%;
-      /*height: 20%;*/
-      float: left;
-      margin-left: 5%; }
-
-nav ul {
-  float: right;
-  margin-top: 18%;
-  margin-right: 3%;
-  /*pless booking text*/ }
-  nav ul li {
-    font-size: 100%;
-    margin-right: 6%;
-    margin-top: 7%;
-    float: right;
-    font-family: 'Raleway', sans-serif;
-    list-style: none; }
-    nav ul li a {
-      color: white;
-      text-decoration: none; }
+    header .centerContent .logo {
+      width: 100%;
+      height: auto;
+      /*background: lightblue;*/
+      position: fixed; }
+      header .centerContent .logo img {
+        padding-top: 5%;
+        width: 8%;
+        /*height: 20%;*/
+        /*float: left;*/
+        margin-left: 5%; }
+    header .centerContent .navbar {
+      width: 50%;
+      height: 20%;
+      float: right; }
+      header .centerContent .navbar nav ul {
+        list-style: none;
+        padding-left: 0;
+        margin-right: 5%;
+        margin-top: 10%;
+        float: right;
+        /*pless booking text*/ }
+        header .centerContent .navbar nav ul li {
+          font-size: 100%;
+          /*margin-right: 6%;
+          margin-top: 7%;
+          float: right;*/
+          font-family: 'Oswald', sans-serif; }
+          header .centerContent .navbar nav ul li a {
+            color: #ff9800;
+            text-decoration: none; }
 
 /*follow mouse*/
 /*Facebook knap i venstre side*/
@@ -91,7 +99,7 @@ nav ul {
 
 .fb-toggle-button {
   position: fixed;
-  top: 350px;
+  top: 400px;
   cursor: pointer;
   z-index: 100;
   height: 75px;
@@ -111,6 +119,7 @@ main {
     margin-bottom: 0;
         /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
 clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
+    /*text hide behing header scroll up*/
     /*citat  -har haft mange*/
     /*text 3 ord horisontalt*/
     /*audio player*/
@@ -122,6 +131,43 @@ clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
        -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
        clip-path: polygon(0 100%, 100% 0, 0 0);
     }*/ }
+    main section.top .headertexthide {
+      margin-top: 2em;
+      width: 75%;
+      height: auto;
+      margin-left: 17%;
+      position: absolute;
+      margin-bottom: 5px;
+      font-family: 'Oswald', sans-serif; }
+      main section.top .headertexthide .h2headerhide {
+        width: 100%;
+        margin-top: 1em;
+        position: absolute; }
+        main section.top .headertexthide .h2headerhide .h2million {
+          width: 100%;
+          color: #424242;
+          /*background-color: yellow;*/
+          font-size: 380%;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          line-height: 100%; }
+          main section.top .headertexthide .h2headerhide .h2million h2 {
+            margin-top: 1%; }
+        main section.top .headertexthide .h2headerhide .h2thousand {
+          width: 100%;
+          color: #151515;
+          /*#424242;*/
+          /*background-color: yellow;*/
+          font-size: 1.5em;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          line-height: 100%; }
+          main section.top .headertexthide .h2headerhide .h2thousand h2 {
+            margin-top: 1%; }
+        main section.top .headertexthide .h2headerhide h2::first-letter {
+          color: #ffffff; }
     main section.top .deaninfo {
       color: white;
       margin-top: 22%;
@@ -159,6 +205,7 @@ clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
       main section.top .deantext .h2second {
         width: 150px;
         color: #ff9800;
+        /*orange*/
         /*background-color: yellow;*/
         font-size: 600%;
         margin: 0;
@@ -535,16 +582,20 @@ footer div a i.fa-instagram {
 
 /*CSS Footer slut*/
 /*media queries start*/
+@media screen and (max-width: 908px) {
+  main section.top .deaninfo {
+    width: 70%; } }
 @media screen and (max-width: 768px) {
   main .fb-toggle-button {
     display: none; }
 
-  main section .top .deantext .h2first .h2second .h2third {
-    font-size: 200%; }
-
-  main section.top .deaninfo {
-    width: 70%; } }
-/*media q der bruges i de enkelte classes*/
-/*@include mq(750px){*/
+  main section.top .headertexthide .h2headerhide .h2million {
+    font-size: 250%; } }
+@media screen and (max-width: 632px) {
+  main section.top .headertexthide .h2headerhide .h2million {
+    font-size: 1.5em; } }
+@media screen and (max-width: 565px) {
+  main section.top .headertexthide .h2headerhide {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
