@@ -131,6 +131,17 @@ text-decoration: none;
     width:75px;
     /*display:none;*/
 
+    .fb-toggle-button img {
+    	background: #1abc9c;
+    }
+    .fb-toggle-button img {
+    	opacity: 1;
+    	-webkit-transition: .3s ease-in-out;
+    	transition: .3s ease-in-out;
+    }
+    .fb-toggle-button:hover img {
+    	opacity: .5;
+    }
   }
 /*Facebook knap slut*/
 /*text 3 ord horisontalt*/
@@ -138,8 +149,8 @@ text-decoration: none;
       width: 100%;
       height:auto;
       padding-left: 50%;
-      margin-left: 20%;
-      margin-top: 14em;
+      margin-left: 25%;
+      margin-top: 20em;
       position: absolute;
       z-index: 9;
       font-family: 'Oswald', sans-serif;
@@ -274,7 +285,7 @@ position: absolute;
   section.middleup{
     width: 100%;
     height: 650px;
-    margin-top: 23em;
+    margin-top: 30em;
     background-color: #121212;
     -webkit-clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
   clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
@@ -326,7 +337,8 @@ h2 {
   left: 50%;
   width: 15em;
   height: 15em;
-  margin-bottom: -13%;
+  margin-top: 8em;
+  /*margin-bottom: -13%;*/
   overflow: hidden;
   transform: translate(-50%,-25%);
   background-color: #111;
@@ -781,13 +793,80 @@ button {
      -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
      clip-path: polygon(0 100%, 100% 0, 0 0);
   }*/
-
+section.video{
+  width: 100%;
+  height:500px;
+  margin: auto;
+  padding: 20%;
+    padding-top: 30%;
+}
 section.bottomdown{
   width: 100%;
    height: 500px;
      /* Rotate div */
      -webkit-clip-path: polygon(100% 75%, 0% 100%, 100% 100%);
  clip-path: polygon(100% 75%, 0% 100%, 100% 100%);/*skrå ned*/
+
+ /*luk galleri*/
+ .container{
+	margin: 4% auto;
+	width: 250px;
+  padding-top: 10%;
+	height: 180px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 40s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px #ffffff;
+  border-radius: 17px;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+#carousel img{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+#carousel img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+/*luk galleri*/
   }
 }
 /*   -ms-transform: rotate(-25deg); /* IE 9 */
@@ -816,7 +895,7 @@ section.bottomdown{
          .fb  a:hover {
              background-color: rgba(150, 126, 18, 0.3)
            }
-           
+
          .insta{
            cursor: pointer;
          z-index: 100;
