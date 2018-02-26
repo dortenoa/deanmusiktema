@@ -19,10 +19,10 @@ $(function(){
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
-           $('.imgdean').addClass('shrink');
+           $('.imgdean').fadeOut(1500);
         }
         else {
-            $('.imgdean').removeClass('shrink');
+            $('.imgdean').fadeIn();
         }
   });
 function getCurrentScroll() {
@@ -30,18 +30,18 @@ function getCurrentScroll() {
     }
 });
 
-/*booking text forsvinder ved scroll
+/*booking text forsvinder ved scroll*/
   $(window).scroll(function() {
-    /*alert("hide");
+    /*alert("hide");*/
     if ($(this).scrollTop()>0)
     {
-      $(".booking").fadeOut(800);
+      $(".booking").fadeOut(1200);
     }
     else
       {
         $(".booking").fadeIn();
       }
-    });*/
+    });
 
   /*Zoom on mouseover 3 ord - .h2first*/
   var oldSize = parseFloat($(".h2first").css('font-size'));

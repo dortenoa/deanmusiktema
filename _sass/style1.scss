@@ -11,7 +11,7 @@ body{
   margin:0px;
   width: 100%;
   height: auto;
-  background-color: black;
+  /*background-color: black;*/
 }
 
 header  {
@@ -53,40 +53,56 @@ display: none;
   width: 100%;
   height: 180px;
   margin-top: 0px;
+  position: fixed;
   /*background-color: yellow;*/
 
   /*logo image*/
+  .logo {
+    width: 100%;
+    height: auto;
+    /*background: lightblue;*/
+    position: fixed;
+
     img {
       padding-top: 5%;
       width:8%;
       /*height: 20%;*/
-      float: left;
+      /*float: left;*/
       margin-left: 5%;
     }
+}
 
-}
-}
+.navbar{
+width: 50%;
+height: 20%;
+float: right;
+
 nav{
   ul{
+    list-style: none;
+    padding-left: 0;
+    margin-right: 5%;
+    margin-top: 10%;
     float: right;
-    margin-top: 18%;
-    margin-right: 3%;
 
 /*pless booking text*/
   li{
-    font-size:100%;
-    margin-right: 6%;
+    font-size:130%;
+    /*margin-right: 6%;
     margin-top: 7%;
-    float: right;
-    font-family: 'Raleway', sans-serif;
-    list-style: none;
+    float: right;*/
+    font-family: 'Oswald', sans-serif;
+
 
   a {
-    color:white;
-    text-decoration: none;
+    color:#ffffff;
+text-decoration: none;
   }
     }
     }
+  }
+}
+}
 }
 /*follow mouse*/
 
@@ -116,85 +132,13 @@ nav{
     /*display:none;*/
   }
 /*Facebook knap slut*/
-
-/*Forside start*/
-main {
-height: auto;
-width: 100%;
-background-color: black;
-
-  section.top {
-    height:850px;
-    width: 100%;
-    padding-top: 5%;
-    margin-bottom: 0;
-        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
-/*text hide behing header scroll up*/
-.headertexthide {
-  margin-top: 2em;
-  width: 75%;
-  height: auto;
-  margin-left: 17%;
-  position: absolute;
-  margin-bottom: 5px;
-  font-family: 'Oswald', sans-serif;
-  .h2headerhide{
-width: 100%;
-margin-top: 1em;
-position: absolute;
-
-  .h2million{
-    width:100%;
-    color:#424242;
-    /*background-color: yellow;*/
-    font-size:380%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    line-height: 100%;
-    h2{
-    margin-top: 1%;
-    }
-    }
-    .h2thousand{
-      width:100%;
-      color:rgb(21, 21, 21); /*#424242;*/
-      /*background-color: yellow;*/
-      font-size:1.5em;
-      margin:0;
-      padding: 0;
-      border: 0;
-      line-height: 100%;
-      h2{
-      margin-top: 1%;
-      }
-      }
-      h2::first-letter{
-        color: #ffffff;
-      }
-}
-}
-/*citat  -har haft mange*/
-.deaninfo{
-  color:white;
-  margin-top: 22%;
-  width: 50%;
-  margin-left: 17%;
-  position: absolute;
-  float: right;
-  font-family: 'Oswald', sans-serif;
-  h1{
-    font-size: 150%;
-  }
-}
 /*text 3 ord horisontalt*/
     .deantext{
       width: 100%;
       height:auto;
       padding-left: 50%;
       margin-left: 20%;
-      margin-top: 12em;
+      margin-top: 14em;
       position: absolute;
       z-index: 9;
       font-family: 'Oswald', sans-serif;
@@ -244,15 +188,94 @@ position: absolute;
               }
 
   }
+/*Forside start*/
+main {
+height: auto;
+width: 100%;
+background-color: black;
+
+  section.top {
+    height:850px;
+    width: 100%;
+    padding-top: 5%;
+    margin-bottom: 0;
+    display:flex;
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);*/
+/*text hide behing header scroll up*/
+
+.headertexthide {
+  margin-top: 2em;
+  width: 75%;
+  height: auto;
+
+  margin-left: 17%;
+  position: absolute;
+  margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  .h2headerhide{
+width: 100%;
+margin-top: 1em;
+position: absolute;
+/*background-color: orange;*/
+
+  .h2million{
+    width:100%;
+    color:#424242;
+    /*background-color: yellow;*/
+    font-size:380%;
+    /*opacity:0.5;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 100%;
+    h2{
+    margin-top: 1%;
+    }
+    }
+    .h2thousand{
+      width:100%;
+      color:#424242; /*#424242;*/
+      /*background-color: yellow;*/
+      font-size:1.5em;
+      /*opacity:0.5;*/
+      margin:0;
+      padding: 0;
+      border: 0;
+      line-height: 100%;
+      h2{
+      margin-top: 1%;
+      }
+      }
+      h2::first-letter{
+        color: #ffffff;
+      }
+}
+}
+/*citat  -har haft mange*/
+.deaninfo{
+  color:white;
+  margin-top: 22%;
+  width: 50%;
+  margin-left: 17%;
+  position: absolute;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  h1{
+    font-size: 150%;
+  }
+}
+
   /*audio player*/
-  .audio {
+    .audio {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: white;
     /*width:75%;*/
-    padding-left: 10%;
+    /*padding-left: 10%;*/
+    margin-left: 17%;
     margin-top: 38em;
     z-index: 1;
     position: absolute;
@@ -734,6 +757,7 @@ clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);*/
     100% { transform: rotate(360deg) translate(-50%,-50%); }
   }
   }
+
   /*audio slut*/
   section.middleup{
     width: 100%;
@@ -745,7 +769,7 @@ clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);*/
     /*    -webkit-clip-path: polygon(0 74%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 74%, 100% 0, 100% 100%, 0% 100%);*/
 }
-
+}
   /*section.middle{
      width: 100%;
      height: 500px;
@@ -753,7 +777,7 @@ clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);*/
      -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
      clip-path: polygon(0 100%, 100% 0, 0 0);
   }*/
-  }
+
 section.bottomdown{
   width: 100%;
    height: 500px;
@@ -773,6 +797,37 @@ section.bottomdown{
        position: absolute;
        width: 100%;
        /*footer luk*/ }
+       .somelogo {
+         float: right;
+
+         .fb{
+           cursor: pointer;
+         z-index: 100;
+         height: 60px;
+         width:60px;
+         margin-left: 5px;
+         margin-top: -30px;
+         margin-right: 15px;
+         }
+         .insta{
+           cursor: pointer;
+         z-index: 100;
+         height: 60px;
+         width:60px;
+         margin-left: 5px;
+         margin-top: -30px;
+         margin-right: 15px;
+         }
+         .snap{
+           cursor: pointer;
+         z-index: 100;
+         height: 60px;
+         width:60px;
+         margin-left: 5px;
+         margin-top: -30px;
+         margin-right: 15px;
+         }
+       }
        footer div {
          /*logoer ligger på linier med header*/
          /* a luk*/ }
@@ -807,28 +862,63 @@ section.bottomdown{
      /*CSS Footer slut*/
      /*media queries start*/
 
+@media screen and (max-width:908px) {
+  main section.top .deaninfo{
+    width: 70%;
+  }
+}
      @media screen and (max-width:768px) {
        main .fb-toggle-button {
          display:none;
        }
+header .centerContent .navbar nav ul li{
+      font-size: 115%;
+}
 
-       main section.top .deaninfo{
-         width: 70%;
-       }
        main section.top .headertexthide .h2headerhide .h2million{
          font-size: 250%;
        }
 }
 
 @media screen and (max-width:632px){
-main section.top .headertexthide .h2headerhide .h2million{
+      main section.top .headertexthide .h2headerhide .h2million{
    font-size: 1.5em;
 }
+
+header .centerContent .navbar nav ul li{
+      font-size: 100%;
 }
+body .deantext .h2first {
+      font-size: 500%;
+}
+body .deantext .h2second {
+      font-size: 500%;
+}
+body .deantext .h2third{
+      font-size: 500%;
+}
+}
+
 @media screen and (max-width:565px){
-main section.top .headertexthide .h2headerhide {
+      main section.top .headertexthide .h2headerhide {
    display: none;
 }
+main section.top .deantext .h2first {
+      font-size: 400%;
 }
- /*media q der bruges i de enkelte classes*/
-/*@include mq(750px){*/
+main section.top .deantext .h2second {
+      font-size: 400%;
+}
+main section.top .deantext .h2third{
+      font-size: 400%;
+}
+body .deantext .h2first {
+      font-size: 400%;
+}
+body .deantext .h2second {
+      font-size: 400%;
+}
+body .deantext .h2third{
+      font-size: 400%;
+}
+}
