@@ -560,27 +560,34 @@ main {
       align-content: space-around;
       margin-left: auto;
       margin-right: auto;
-      /*deanvideo luk*/ }
+      /*deanvideo luk*/
+      /*lukker infotekst*/ }
       main .videodean .center2 .deanvideo {
-        width: 60%;
+        width: 40%;
         height: auto;
         /*500px;*/
         /*background-color: pink;*/
         float: left;
-        padding-left: 8%;
-        /*lukker nextvideo*/ }
+        padding-left: 9%; }
         main .videodean .center2 .deanvideo .frontpagemediamaster {
           margin-bottom: 20em;
           padding-left: 4%;
           margin-left: 17%;
           padding-top: 6%;
           text-align: right; }
-        main .videodean .center2 .deanvideo .nextvideo {
-          width: 40%;
-          height: auto;
-          /*500px;*/
-          background-color: green;
-          float: right; }
+      main .videodean .center2 .infotekst {
+        width: 30%;
+        height: auto;
+        /*500px;*/
+        /*background-color: green;*/
+        float: left; }
+        main .videodean .center2 .infotekst h1 {
+          font-size: 200%;
+          color: #7e7b17;
+          font-family: 'Oswald', sans-serif; }
+        main .videodean .center2 .infotekst h4 {
+          color: white;
+          font-family: 'Oswald', sans-serif; }
   main .gallery {
     width: 100%;
     height: 500px;

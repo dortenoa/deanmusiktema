@@ -119,6 +119,18 @@ $(".fb-toggle-button").click(function() {
             }
             );
 
+            /*zoom hundred ud*/
+            var oldSize = parseFloat($(".h2third").css('font-size'));
+            var newSize = oldSize  * 0.3;
+            $(".some").hover(
+            function() {
+             $(".some").animate({ fontSize: newSize}, 1500);
+            },
+            function() {
+            $(".some").animate({ fontSize: oldSize}, 1500);
+            }
+            );
+
 /*audio player*/
         var player = $('.player'),
             audio = player.find('audio'),

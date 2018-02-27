@@ -763,7 +763,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
     /*background-color: green;*/
     float: right;
 
-    
+
   }/*wordstilt*/
   }/*center luk*/
 }/*greyline luk*/
@@ -810,11 +810,11 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
   margin-right: auto;
 
 .deanvideo{
-  width: 60%;
+  width: 40%;
   height: auto; /*500px;*/
   /*background-color: pink;*/
   float: left;
-  padding-left: 8%;
+  padding-left: 9%;
 
   .frontpagemediamaster {
     margin-bottom: 20em;
@@ -823,14 +823,24 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
     padding-top: 6%;
     text-align: right;
   }
-
-.nextvideo{
-  width: 40%;
-  height: auto; /*500px;*/
-  background-color: green;
-  float: right;
-}/*lukker nextvideo*/
 }/*deanvideo luk*/
+.infotekst{
+  width: 30%;
+  height: auto; /*500px;*/
+  /*background-color: green;*/
+  float: left;
+
+h1{
+  font-size: 200%;
+  color:#7e7b17;
+  font-family: 'Oswald', sans-serif;
+}
+  h4 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+  }
+}/*lukker infotekst*/
+
 }/*center2*/
 }/*lukkervideodean*/
 
