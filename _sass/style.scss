@@ -2,6 +2,7 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "_variables";
 @charset "UTF-8";
+/*dorte*/
 
 /* CSS Document */
 * {
@@ -110,7 +111,63 @@ text-decoration: none;
 }/*lukker centercontent*/
 }/*lukker header*/
 
+/*text 3 ord horisontalt*/
+    .deantext{
+      width: 100%;
+      height:auto;
+      padding-left: 50%;
+      margin-left: 25%;
+      margin-top: 20em;
+      position: absolute;
+      z-index: 9;
+      font-family: 'Oswald', sans-serif;
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(90deg); /* Standard syntax */
 
+        .h2first{
+          width:100%;
+          color:white;
+          /*background-color: yellow;*/
+          font-size:600%;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          line-height: 100%;
+          h2{
+          margin-top: 1%;
+          }
+          }
+
+          .h2second{
+            width:150px;
+            color:#ff9800; /*orange*/
+            /*background-color: yellow;*/
+            font-size: 600%;
+            margin: 0;
+            padding-left: 15%;
+            border: 0;
+            line-height: 100%;
+            h2{
+            margin-top: 1%;
+            }
+            }
+
+            .h2third{
+              width:150px;
+              color:#424242;
+              /*background-color: yellow;*/
+              font-size: 600%;
+              margin: 0;
+              padding-left: 30%;
+              border: 0;
+              line-height: 100%;
+              h2{
+              margin-top:1%;
+              }
+              }
+
+  }
+/*Forside start*/
 
 
 
@@ -207,11 +264,13 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
     /*background-color: pink;*/
     float: left;
 
+
     .audio {
+      display: none;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 115vh;
       color: #666;
       font-size: 100%;
       font-weight: 300;
@@ -450,7 +509,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
       align-items: center;
       padding: 0 0.5em;
       margin-bottom: 0.5em;
-      margin-top: -2em;
+      margin-top: -3em;
     }
 
     .time > * {
@@ -459,7 +518,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
 
     .progress {
       flex-grow: 2;
-      height: 0.125em;
+      height: 0.25em;
       background-color: #999;
       border-radius: 0.0625em;
       box-shadow: 0 0.0625em rgba(255,255,255,1);
@@ -470,13 +529,13 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
       display: block;
       width: 0;
       height: 100%;
-      background-color: #666;
+      background-color: #957e17;
     }
 
     .actions {
       position: relative;
       width: 100%;
-      padding: 1em 0 7em;
+      padding: 1em 0 11em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -512,7 +571,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
       height: 80%;
       transform: translate(-50%,-50%);
       background-color: #f4f4f4;
-      border: 0.125em solid #d5d5d5;
+      border: 0.125em solid #424242;
       border-radius: 50%;
       box-shadow: inset 0 0.25em 1em -0.25em rgba(255,255,255,0.75);
     }
@@ -556,7 +615,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
       width: 100%;
       height: 100%;
       transform: scale(1.2,0.7) rotate(45deg);
-      background-color: #ddd;
+      background-color: #424242;
       box-shadow:
         inset 0 0.125em 0.125em -0.0625em rgba(0,0,0,0.15),
         0.0625em 0.0625em 0.125em rgba(255,255,255,1);
@@ -610,7 +669,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
     .shuffle {
       width: 1.375em;
       height: 1.375em;
-      color: #d5d5d5;
+      color: #424242;
     }
 
     .shuffle .arrow {
@@ -656,7 +715,7 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
     .repeat {
       width: 1.375em;
       height: 1.375em;
-      color: #d5d5d5;
+      color: #424242;
       border: 0.125em solid;
       border-right-color: transparent;
       border-radius: 50%;
@@ -701,99 +760,108 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
   .wordstilt{
     width: 40%;
     height: auto; /*500px;*/
-    background-color: green;
+    /*background-color: green;*/
     float: right;
 
-    /*text 3 ord horisontalt*/
-        .deantext{
-          width: 100%;
-          height:auto;
-          background-color: yellow;
-          /*padding-left: 50%;
-          margin-left: 25%;
-          margin-top: 20em;
-          position: absolute;
-          z-index: 9;*/
-          font-family: 'Oswald', sans-serif;
-        -webkit-transform: rotateZ(90deg); /* Safari */
-        transform: rotateZ(90deg); /* Standard syntax */
-
-            .h2first{
-              width:100%;
-              color:white;
-              /*background-color: yellow;*/
-              font-size:150%;
-              margin: 0;
-              padding: 0;
-              border: 0;
-              line-height: 100%;
-              p{
-              margin-top: 1%;
-              }
-              }
-
-              .h2second{
-                width:150px;
-                color:#ff9800; /*orange*/
-                /*background-color: yellow;*/
-                font-size: 150%;
-                margin: 0;
-                padding-left: 15%;
-                border: 0;
-                line-height: 100%;
-                p{
-                margin-top: 1%;
-                }
-                }
-
-                .h2third{
-                  width:150px;
-                  color:#424242;
-                  /*background-color: yellow;*/
-                  font-size: 150%;
-                  margin: 0;
-                  padding-left: 30%;
-                  border: 0;
-                  line-height: 100%;
-                  p{
-                  margin-top:1%;
-                  }
-                  }
-
-      }
+    
   }/*wordstilt*/
   }/*center luk*/
 }/*greyline luk*/
 
 
-
+/*video start*/
 
 .videodean{
   width: 100%;
   height: 500px;
-  /*background-color: orange;*/
+  margin-top: 3em;
+  margin-bottom: 2em;
+
+  .overskrift {
+    width:80%;
+    margin-left: 17%;
+    /*background-color: orange;*/
+    padding-bottom: 3em;
 
 
-}/*video luk*/
-/*videostyling start*/
-.frontpagemediamaster {
-  margin-bottom: 20em;
-  text-align: center;
-  padding-top: 6%;
-}
-/*video slut*/
+    .h1million{
+      color: white;
+      font-size: 400%;
+      font-family: 'Oswald', sans-serif;
+      line-height: 100%;
+            }
+
+    .h1thousand{
+      color:#424242;
+      font-size: 200%;
+      font-family: 'Oswald', sans-serif;
+      line-height: 100%;
+    }
+  }
+
+.center2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+
+.deanvideo{
+  width: 60%;
+  height: auto; /*500px;*/
+  /*background-color: pink;*/
+  float: left;
+  padding-left: 8%;
+
+  .frontpagemediamaster {
+    margin-bottom: 20em;
+    padding-left: 4%;
+    margin-left: 17%;
+    padding-top: 6%;
+    text-align: right;
+  }
+
+.nextvideo{
+  width: 40%;
+  height: auto; /*500px;*/
+  background-color: green;
+  float: right;
+}/*lukker nextvideo*/
+}/*deanvideo luk*/
+}/*center2*/
+}/*lukkervideodean*/
+
 
 .gallery{
   width: 100%;
   height: 500px;
   /*background-color: lightblue;*/
+
+  .overskrift2 {
+    width:80%;
+    margin-left: 17%;
+    padding-top: 3em;
+    /*background-color: orange;*/
+
+
+  .h1hundred{
+    color: white;
+    font-size: 400%;
+    font-family: 'Oswald', sans-serif;
+    }
+}/*overskrift2 luk*/
   .container{
  	margin: 4% auto;
  	width: 250px;
-   padding-top: 10%;
+  padding-top: 5%;
  	height: 180px;
  	position: relative;
  	perspective: 1000px;
+
+
 } /*galleri start*/
  #carousel{
  	width: 100%;
@@ -844,11 +912,9 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
  	to{
  		transform: rotateY(360deg);
  	}
- }/*luk galleri*/
-
-}/*galleri luk*/
+}/*keyframes luk*/
+}/*luk galleri*/
 }/*main luk*/
-
 
 
 

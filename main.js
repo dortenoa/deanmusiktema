@@ -23,7 +23,7 @@ $(".fb-toggle-button").click(function() {
     /*alert("hide");*/
     if ($(this).scrollTop()>0)
     {
-      $(".booking").fadeOut(800);
+      $(".booking").fadeOut(5000);
     }
     else
       {
@@ -31,18 +31,93 @@ $(".fb-toggle-button").click(function() {
       }
     });
 
-    /*header forsvinder ved scroll*/
-      $(window).scroll(function() {
-        /*alert("hide");*/
-        if ($(this).scrollTop()>0)
-        {
-          $(".imgdean").fadeOut(800);
-        }
-        else
-          {
-            $(".imgdean").fadeIn();
-          }
-        });
+  /*header forsvinder ved scroll*/
+  $(window).scroll(function() {
+    /*alert("hide");*/
+    if ($(this).scrollTop()>0)
+    {
+      $(".imgdean").fadeOut(1500);
+    }
+    else
+      {
+        $(".imgdean").fadeIn();
+      }
+    });
+
+        /*lp-plade album text forsvinder ved scroll*/
+          $(window).scroll(function() {
+            /*alert("hide");*/
+            if ($(this).scrollTop()>0)
+            {
+              $(".album").fadeIn(7000);
+            }
+            else
+              {
+                $(".album").fadeOut(500);
+              }
+            });
+
+            /*Zoom on mouseover 3 ord*/
+              var oldSize = parseFloat($(".h2first").css('font-size'));
+              var newSize = oldSize  * 2;
+              $(".h2first").hover(
+                function() {
+                 $(".h2first").animate({ fontSize: newSize}, 1500);
+                },
+                function() {
+                $(".h2first").animate({ fontSize: oldSize}, 1500);
+               }
+             );
+
+
+            /*3 ord second zoom ud*/
+            var oldSize = parseFloat($(".h2second").css('font-size'));
+            var newSize = oldSize  * 2;
+            $(".h2second").hover(
+            function() {
+             $(".h2second").animate({ fontSize: newSize}, 1500);
+            },
+            function() {
+            $(".h2second").animate({ fontSize: oldSize}, 1500);
+            }
+            );
+
+
+            /*3 ord third zoom ud*/
+            var oldSize = parseFloat($(".h2third").css('font-size'));
+            var newSize = oldSize  * 2;
+            $(".h2third").hover(
+            function() {
+             $(".h2third").animate({ fontSize: newSize}, 1500);
+            },
+            function() {
+            $(".h2third").animate({ fontSize: oldSize}, 1500);
+            }
+            );
+
+            /*zoom million ud*/
+            var oldSize = parseFloat($(".h2third").css('font-size'));
+            var newSize = oldSize  * 1.5;
+            $(".h1million").hover(
+            function() {
+             $(".h1million").animate({ fontSize: newSize}, 1500);
+            },
+            function() {
+            $(".h1million").animate({ fontSize: oldSize}, 1500);
+            }
+            );
+
+            /*zoom hundred ud*/
+            var oldSize = parseFloat($(".h2third").css('font-size'));
+            var newSize = oldSize  * 1.5;
+            $(".h1hundred").hover(
+            function() {
+             $(".h1hundred").animate({ fontSize: newSize}, 1500);
+            },
+            function() {
+            $(".h1hundred").animate({ fontSize: oldSize}, 1500);
+            }
+            );
 
 /*audio player*/
         var player = $('.player'),
