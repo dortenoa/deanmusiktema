@@ -169,4 +169,3 @@ progressBar.parent().on('click mousemove', function(e) {
     }
   }
 });
-}); /*ready luk*/
