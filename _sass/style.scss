@@ -13,18 +13,17 @@
 
 html {
   height:  100%;
-}
+
 
 body {
     height: 100%;
     background-color: black;
-}
+
 
 img {
   width: 100%; /*vigtigt billedestørrelse så de tilpasser sig screen*/
   /*border-radius: 10px;*/
 }
-
 header  {
   height: 100px;
   width: 100%;
@@ -57,7 +56,7 @@ z-index: -1;
       transition: all 0.1s;
   }
   /*header shrink slut*/
-  .centerContent {
+  .centercontent {
   width: 100%;
   height: 180px;
   margin: 0px;
@@ -111,73 +110,12 @@ text-decoration: none;
 }/*lukker centercontent*/
 }/*lukker header*/
 
-/*text 3 ord horisontalt*/
-    .deantext{
-      width: 100%;
-      height:auto;
-      padding-left: 50%;
-      margin-left: 25%;
-      margin-top: 20em;
-      position: absolute;
-      z-index: 9;
-      font-family: 'Oswald', sans-serif;
-    -webkit-transform: rotateZ(90deg); /* Safari */
-    transform: rotateZ(90deg); /* Standard syntax */
-
-        .h2first{
-          width:100%;
-          color:white;
-          /*background-color: yellow;*/
-          font-size:600%;
-          margin: 0;
-          padding: 0;
-          border: 0;
-          line-height: 100%;
-          h2{
-          margin-top: 1%;
-          }
-          }
-
-          .h2second{
-            width:150px;
-            color:#ff9800; /*orange*/
-            /*background-color: yellow;*/
-            font-size: 600%;
-            margin: 0;
-            padding-left: 15%;
-            border: 0;
-            line-height: 100%;
-            h2{
-            margin-top: 1%;
-            }
-            }
-
-            .h2third{
-              width:150px;
-              color:#424242;
-              /*background-color: yellow;*/
-              font-size: 600%;
-              margin: 0;
-              padding-left: 30%;
-              border: 0;
-              line-height: 100%;
-              h2{
-              margin-top:1%;
-              }
-              }
-
-  }
-/*Forside start*/
-
-
-
-
-
-
+/*header slut*/
 
 main {
   width: 100%;
   margin: 0px;
+  height: auto;
 
   /*Facebook knap i venstre side*/
     .fb-iframe {
@@ -206,38 +144,39 @@ main {
       /*display:none;*/
 
       .fb-toggle-button img {
-      	background: #1abc9c;
+        background: #1abc9c;
       }
       .fb-toggle-button img {
-      	opacity: 1;
-      	-webkit-transition: .3s ease-in-out;
-      	transition: .3s ease-in-out;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
       }
       .fb-toggle-button:hover img {
-      	opacity: .5;
+        opacity: .5;
       }
     }
   /*Facebook knap slut*/
+   .top {
+    width: 100%;
+    height: 520px;
+    /*laja */
 
-.top {
-  width: 100%;
-  height: 520px;
+    /*.top citat  -har haft mange*/
+    .deaninfo{
+      color:white;
+      margin-top: 28%;
+      width: 50%;
+      margin-left: 17%;
+      position: absolute;
+      float: right;
+      font-family: 'Oswald', sans-serif;
+      h1{
+        font-size: 150%;
+      }/*h1 luk*/
+    }/*deaninfo luk*/
+  }/*top luk*/
 
-  /*citat  -har haft mange*/
-  .deaninfo{
-    color:white;
-    margin-top: 28%;
-    width: 50%;
-    margin-left: 17%;
-    position: absolute;
-    float: right;
-    font-family: 'Oswald', sans-serif;
-    h1{
-      font-size: 150%;
-    }/*h1 luk*/
-  }/*deaninfo luk*/
-}/*top luk*/
-
+/*greyline*/
 .greyline{
   width: 100%;
   height: 500px;/*auto*/
@@ -246,6 +185,7 @@ main {
   background-color: #121212;
   -webkit-clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
 clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
+
 
 .center{
   display: flex;
@@ -753,178 +693,17 @@ clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
       100% { transform: rotate(360deg) translate(-50%,-50%); }
     }/*keyframes luk*/
   }/*audio*/
-
     /*audio slut*/
 
-
+/* højre sektion*/
   .wordstilt{
     width: 40%;
     height: auto; /*500px;*/
     /*background-color: green;*/
     float: right;
-
-
   }/*wordstilt*/
   }/*center luk*/
-}/*greyline luk*/
-
-
-/*video start*/
-
-.videodean{
-  width: 100%;
-  height: 500px;
-  margin-top: 3em;
-  margin-bottom: 2em;
-
-  .overskrift {
-    width:80%;
-    margin-left: 17%;
-    /*background-color: orange;*/
-    padding-bottom: 3em;
-
-
-    .h1million{
-      color: white;
-      font-size: 400%;
-      font-family: 'Oswald', sans-serif;
-      line-height: 100%;
-            }
-
-    .h1thousand{
-      color:#424242;
-      font-size: 200%;
-      font-family: 'Oswald', sans-serif;
-      line-height: 100%;
-    }
-  }
-
-.center2 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-wrap: wrap;
-  align-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
-
-.deanvideo{
-  width: 40%;
-  height: auto; /*500px;*/
-  /*background-color: pink;*/
-  float: left;
-  padding-left: 9%;
-
-  .frontpagemediamaster {
-    margin-bottom: 20em;
-    padding-left: 4%;
-    margin-left: 17%;
-    padding-top: 6%;
-    text-align: right;
-  }
-}/*deanvideo luk*/
-.infotekst{
-  width: 30%;
-  height: auto; /*500px;*/
-  /*background-color: green;*/
-  float: left;
-
-h1{
-  font-size: 200%;
-  color:#7e7b17;
-  font-family: 'Oswald', sans-serif;
 }
-  h4 {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-  }
-}/*lukker infotekst*/
-
-}/*center2*/
-}/*lukkervideodean*/
-
-
-.gallery{
-  width: 100%;
-  height: 500px;
-  /*background-color: lightblue;*/
-
-  .overskrift2 {
-    width:80%;
-    margin-left: 17%;
-    padding-top: 3em;
-    /*background-color: orange;*/
-
-
-  .h1hundred{
-    color: white;
-    font-size: 400%;
-    font-family: 'Oswald', sans-serif;
-    }
-}/*overskrift2 luk*/
-  .container{
- 	margin: 4% auto;
- 	width: 250px;
-  padding-top: 5%;
- 	height: 180px;
- 	position: relative;
- 	perspective: 1000px;
-
-
-} /*galleri start*/
- #carousel{
- 	width: 100%;
- 	height: 100%;
- 	position: absolute;
- 	transform-style: preserve-3d;
- 	animation: rotation 40s infinite linear;
- }
- #carousel:hover{
- 	animation-play-state: paused;
- }
- #carousel figure{
- 	display: block;
- 	position: absolute;
- 	width: 186px;
- 	height: 116px;
- 	left: 10px;
- 	top: 10px;
- 	background: black;
- 	overflow: hidden;
- 	border: solid 5px #ffffff;
-   border-radius: 17px;
- }
- #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
- #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
- #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
- #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
- #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
- #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
- #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
- #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
- #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
-
- #carousel img{
- 	-webkit-filter: grayscale(1);
- 	cursor: pointer;
- 	transition: all .5s ease;
- }
- #carousel img:hover{
- 	-webkit-filter: grayscale(0);
-   transform: scale(1.2,1.2);
- }
-
- @keyframes rotation{
- 	from{
- 		transform: rotateY(0deg);
- 	}
- 	to{
- 		transform: rotateY(360deg);
- 	}
-}/*keyframes luk*/
-}/*luk galleri*/
-}/*main luk*/
 
 
 
@@ -934,69 +713,62 @@ h1{
 
 
 
-       /*CSS footer start*/
-            footer {
-              height: 60px;
-              background-color: #121212;
-              position: absolute;
-
-              width: 100%;
+}/*lukker main
 
 
-              .somelogo {
-                float: right;
 
-                .fb{
-                  cursor: pointer;
-                z-index: 100;
-                height: 60px;
-                width:60px;
-                margin-left: 5px;
-                margin-top: -30px;
-                margin-right: 15px;
-                }
-                .fb  a:hover {
-                    background-color: rgba(150, 126, 18, 0.3)
-                  }
+/*CSS footer start*/
+     footer {
+       height: 60px;
+       background-color: #121212;
+       position: absolute;
 
-                .insta{
-                  cursor: pointer;
-                z-index: 100;
-                height: 60px;
-                width:60px;
-                margin-left: 5px;
-                margin-top: -30px;
-                margin-right: 15px;
-                }
-                .snap{
-                  cursor: pointer;
-                z-index: 100;
-                height: 60px;
-                width:60px;
-                margin-left: 5px;
-                margin-top: -30px;
-                margin-right: 15px;
-                }
-              }
-}  /*footer luk*/
-            /*CSS Footer slut*/
+       width: 100%;
+
+
+       .somelogo {
+         float: right;
+
+         .fb{
+         cursor: pointer;
+         z-index: 100;
+         height: 60px;
+         width:60px;
+         margin-left: 5px;
+         margin-top: -30px;
+         margin-right: 15px;
+         }
+         .fb:hover {
+             opacity:0.7;
+           }
+
+         .insta{
+           cursor: pointer;
+         z-index: 100;
+         height: 60px;
+         width:60px;
+         margin-left: 5px;
+         margin-top: -30px;
+         margin-right: 15px;
+         }
+         .snap{
+           cursor: pointer;
+         z-index: 100;
+         height: 60px;
+         width:60px;
+         margin-left: 5px;
+         margin-top: -30px;
+         margin-right: 15px;
+         }
+       }
+}  /*lukker footer*/
+
+
+}/*lukker body*/
+} /*lukker html*/
+
 @media screen and (max-width:768px) {
   main .fb-toggle-button {
     display:none;
 }
-}
-
-@media screen and (max-width:637px) {
-  main .greyline .center .audioplayer {
-    width:100%;
-  }
-  main .greyline .center .wordstilt {
-    width:100%;
-  }
-}
-
-@media screen and (max-width:580px) {
-  main .greyline .center .audioplayer .album {
-  margin-top: 0;
-  }
 }
