@@ -151,13 +151,15 @@ header {
 main {
   width: 100%;
   margin: 0px;
+  height: auto;
   /*Facebook knap i venstre side*/
   /*Facebook knap slut*/
   /*top luk*/
   /*greyline luk*/
   /*video start*/
   /*lukkervideodean*/
-  /*luk galleri*/ }
+  /*galleri mobil start wolf*/
+  /*galmobil luk*/ }
   main .fb-iframe {
     height: 500px;
     /*background: blue;*/
@@ -190,6 +192,7 @@ main {
   main .top {
     width: 100%;
     height: 520px;
+    /*laja */
     /*citat  -har haft mange*/
     /*deaninfo luk*/ }
     main .top .deaninfo {
@@ -212,6 +215,7 @@ main {
     background-color: #121212;
     -webkit-clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
     clip-path: polygon(100% 5%, 100% 38%, 0 100%, 0 25%);
+    /*laja*/
     /*center luk*/ }
     main .greyline .center {
       display: flex;
@@ -569,12 +573,19 @@ main {
         /*background-color: pink;*/
         float: left;
         padding-left: 9%; }
-        main .videodean .center2 .deanvideo .frontpagemediamaster {
-          margin-bottom: 20em;
-          padding-left: 4%;
-          margin-left: 17%;
-          padding-top: 6%;
-          text-align: right; }
+        main .videodean .center2 .deanvideo .videoframe {
+          width: 100%;
+          margin-top: 0;
+          padding-top: .2em; }
+          main .videodean .center2 .deanvideo .videoframe .videoframeouter {
+            width: 100%; }
+            main .videodean .center2 .deanvideo .videoframe .videoframeouter .videoframeinner {
+              width: 100%;
+              /*height: 500px;*/
+              display: inline-block;
+              margin-left: 5px;
+              overflow: hidden;
+              margin-bottom: 0; }
       main .videodean .center2 .infotekst {
         width: 30%;
         height: auto;
@@ -588,78 +599,62 @@ main {
         main .videodean .center2 .infotekst h4 {
           color: white;
           font-family: 'Oswald', sans-serif; }
-  main .gallery {
+  main .galmobil {
     width: 100%;
-    height: 500px;
-    /*background-color: lightblue;*/
-    /*overskrift2 luk*/
-    /*galleri start*/
-    /*keyframes luk*/ }
-    main .gallery .overskrift2 {
+    height: auto;
+    /* responsive images */
+    /*lukker overskrift2*/
+    /* align-center class */
+    /* scrollbar > chrome */
+    /* section > fourth-page */
+    /*gallery lukker*/ }
+    main .galmobil img {
+      max-width: 100%;
+      height: auto; }
+    main .galmobil .overskrift2 {
       width: 80%;
       margin-left: 17%;
       padding-top: 3em;
       /*background-color: orange;*/ }
-      main .gallery .overskrift2 .h1hundred {
+      main .galmobil .overskrift2 .h1hundred {
         color: white;
         font-size: 400%;
         font-family: 'Oswald', sans-serif; }
-    main .gallery .container {
-      margin: 4% auto;
-      width: 250px;
-      padding-top: 5%;
-      height: 180px;
+    main .galmobil .align-center {
+      margin: 0 auto !important;
+      text-align: center; }
+    main .galmobil ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: transparent; }
+    main .galmobil ::-webkit-scrollbar {
+      width: 10px;
+      background-color: transparent; }
+    main .galmobil ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #555; }
+    main .galmobil section#fourth-page {
+      display: grid;
+      grid-template-columns: 1fr 8fr 1fr;
+      grid-template-rows: auto;
+      padding: 2em 0 4em;
+      /*padding-left: 17%;*/
       position: relative;
-      perspective: 1000px; }
-    main .gallery #carousel {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      transform-style: preserve-3d;
-      animation: rotation 40s infinite linear; }
-    main .gallery #carousel:hover {
-      animation-play-state: paused; }
-    main .gallery #carousel figure {
-      display: block;
-      position: absolute;
-      width: 186px;
-      height: 116px;
-      left: 10px;
-      top: 10px;
-      background: black;
       overflow: hidden;
-      border: solid 5px #ffffff;
-      border-radius: 17px; }
-    main .gallery #carousel figure:nth-child(1) {
-      transform: rotateY(0deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(2) {
-      transform: rotateY(40deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(3) {
-      transform: rotateY(80deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(4) {
-      transform: rotateY(120deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(5) {
-      transform: rotateY(160deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(6) {
-      transform: rotateY(200deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(7) {
-      transform: rotateY(240deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(8) {
-      transform: rotateY(280deg) translateZ(288px); }
-    main .gallery #carousel figure:nth-child(9) {
-      transform: rotateY(320deg) translateZ(288px); }
-    main .gallery #carousel img {
-      -webkit-filter: grayscale(1);
-      cursor: pointer;
-      transition: all .5s ease; }
-    main .gallery #carousel img:hover {
-      -webkit-filter: grayscale(0);
-      transform: scale(1.2, 1.2); }
-@keyframes rotation {
-  from {
-    transform: rotateY(0deg); }
-  to {
-    transform: rotateY(360deg); } }
+      background-color: black; }
+    main .galmobil section#fourth-page > div.fourth-page-gallery {
+      grid-column: 2/3;
+      margin: 1em auto;
+      text-align: center; }
+    main .galmobil section#fourth-page > div.fourth-page-gallery > div.gallery-items {
+      display: inline-block;
+      margin: 10px; }
+    main .galmobil section#fourth-page > div.fourth-page-gallery > div.gallery-items img {
+      max-width: 235px;
+      max-height: auto;
+      border-radius: 10px; }
+
 /*main luk*/
 /*CSS footer start*/
 footer {
@@ -677,8 +672,8 @@ footer {
       margin-left: 5px;
       margin-top: -30px;
       margin-right: 15px; }
-    footer .somelogo .fb a:hover {
-      background-color: rgba(150, 126, 18, 0.3); }
+    footer .somelogo .fb:hover {
+      opacity: 0.7; }
     footer .somelogo .insta {
       cursor: pointer;
       z-index: 100;
@@ -710,5 +705,55 @@ footer {
 @media screen and (max-width: 580px) {
   main .greyline .center .audioplayer .album {
     margin-top: 0; } }
+@media screen and (max-width: 414px) {
+  main .top .deaninfo {
+    margin-top: 35%; }
+
+  .deantext {
+    margin-top: 35%;
+    margin-left: 0;
+    margin-top: 15em; }
+
+  main .greyline {
+    background-color: transparent;
+    -webkit-clip-path: none;
+    clip-path: none; }
+
+  main .greyline .center .audioplayer {
+    margin-top: 5em; }
+
+  main .greyline .center .audioplayer .actions {
+    padding: 1em 0 2em; }
+
+  main .videodean {
+    margin-top: 15em; }
+
+  main .videodean .center2 .deanvideo {
+    width: 100%;
+    padding: 0; }
+
+  main .gallery .container {
+    display: none; }
+
+  main .videodean .overskrift .h1million {
+    font-size: 350%; }
+
+  main .videodean .center2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%; }
+
+  main .videodean .center2 .deanvideo .videoframe .videoframeouter .videoframeinner {
+    margin-left: 0px; }
+
+  main .videodean .center2 .infotekst {
+    width: 100%;
+    padding-top: 2em; }
+
+  main .gallery .overskrift2 {
+    padding-top: 15em; }
+
+  main .gallery {
+    margin-top: 5em; } }
 
 /*# sourceMappingURL=style.css.map */
